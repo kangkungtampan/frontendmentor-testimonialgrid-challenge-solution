@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+body {
+    background-color: #ecf2f8;
+    padding: 10% 5%;
+}
+
+#testimonial-1 {
+    background-color: #7541c8;
+    color:#ffffff;
+    border-radius: 10px;
+    position: relative;
+    z-index: 0;
+}
+
+#testimonial-2 {
+    background-color: #48556a;
+    color:#ffffff;
+    border-radius: 10px;
+}
+
+#testimonial-3 {
+    background-color: #ffffff;
+    color: #19212e;
+    border-radius: 10px;
+    box-shadow: 0px 17px 37px -24px rgba(0,0,0,0.83);
+}
+
+#testimonial-4 {
+    background-color: #19212e;
+    color:#ffffff;
+    border-radius: 10px;
+}
+
+#testimonial-5 {
+    background-color: #ffffff;
+    color: #19212e;
+    border-radius: 10px;
+    box-shadow: 0px 17px 37px -24px rgba(0,0,0,0.83);
+}
+
+.grid-item {
+    margin-bottom: 20px;
+    padding: 40px;
+    padding-top: 30px;
+}
+
+#quote {
+  position: absolute;
+  right: 100px;
+  top: 0px;
+  z-index: -1;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+}
+
+.profile-picture-container {
+    border-radius: 50%;
+    width: 45px;
+    border: 2px solid #7541c8;
+}
+  
+.profile-text-container {
+    line-height: 1.5;
+    margin-left: 20px;
+}
+  
+.testimonial-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.contents-bold, .contents-normal {
+    line-height: 1.5;
+    margin-top: 20px;
+}
+
+.contents-bold {
+  font-size: 22px;
+}
+
+.contents-normal {
+  font-size: 15.5px;
+}
+
+@media (min-width: 800px) {
+  #testimonial-grid-container {
+    display: flex;
+    max-width: 1440px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .grid-item {
+    flex-basis: 33.33%;
+    margin-bottom: 0;
+    margin-right: 20px;
+    flex-wrap: wrap;
+  }
+
+  #testimonial-5 {
+    flex-basis: 20%;
+    margin-right: 0;
+  }
+
+  #main-left-container {
+    flex-basis: 68%;
+  }
+
+  #top-container, #bottom-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #bottom-container {
+    margin-top: 2%;
+  }
+
+  #testimonial-1, #testimonial-4 {
+    flex-basis: 70%;
+  }
+
+  #testimonial-2, #testimonial-3 {
+    flex-basis: 30%;
+  }
+}
